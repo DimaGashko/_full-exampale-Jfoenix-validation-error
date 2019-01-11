@@ -3,8 +3,8 @@
   <component name="GradleLocalSettings">
     <option name="projectSyncType">
       <map>
-        <entry key="$PROJECT_DIR$/../../../JFoenix" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../pullProjects/JFoenix" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../../JFoenix" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../pullProjects/JFoenix" value="PREVIEW" />
       </map>
     </option>
   </component>
