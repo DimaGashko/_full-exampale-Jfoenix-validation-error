@@ -2,10 +2,9 @@ package com;
 
 import com.jfoenix.controls.JFXTextField;
 import com.jfoenix.validation.RequiredFieldValidator;
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.geometry.Pos;
+import javafx.fxml.FXML;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -90,11 +89,54 @@ public class Index implements Initializable {
     }
 
     private void resetAll() {
+        resetField(fxNoError__field1);
+        resetField(fxNoError__field2);
+        resetField(fxNoError__field3);
+        resetField(fxNoError__field4);
+        resetField(fxNoError__field5);
+        resetField(fxNoError__field6);
 
+        resetField(fxWithError__field1);
+        resetField(fxWithError__field2);
+        resetField(fxWithError__field3);
+        resetField(fxWithError__field4);
+        resetField(fxWithError__field5);
+        resetField(fxWithError__field6);
+
+        resetField(fxFixed__field1);
+        resetField(fxFixed__field2);
+        resetField(fxFixed__field3);
+        resetField(fxFixed__field4);
+        resetField(fxFixed__field5);
+        resetField(fxFixed__field6);
+    }
+
+    private void resetField(JFXTextField node) {
+        node.clear();
+        node.resetValidation();
     }
 
     private void validateAll() {
+        fxNoError__field1.validate();
+        fxNoError__field2.validate();
+        fxNoError__field3.validate();
+        fxNoError__field4.validate();
+        fxNoError__field5.validate();
+        fxNoError__field6.validate();
 
+        fxWithError__field1.validate();
+        fxWithError__field2.validate();
+        fxWithError__field3.validate();
+        fxWithError__field4.validate();
+        fxWithError__field5.validate();
+        fxWithError__field6.validate();
+
+        fxFixed__field1.validate();
+        fxFixed__field2.validate();
+        fxFixed__field3.validate();
+        fxFixed__field4.validate();
+        fxFixed__field5.validate();
+        fxFixed__field6.validate();
     }
 
     private void initValidators(JFXTextField node) {
