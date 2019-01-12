@@ -2,6 +2,7 @@ package com;
 
 import com.jfoenix.controls.JFXTextField;
 import com.jfoenix.validation.RequiredFieldValidator;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.geometry.Pos;
@@ -30,6 +31,9 @@ public class Index implements Initializable {
     @FXML private JFXTextField fxFixed__field4;
     @FXML private JFXTextField fxFixed__field5;
     @FXML private JFXTextField fxFixed__field6;
+
+    @FXML public void fxOnResetAll() { resetAll(); }
+    @FXML public void fxOnValidateAll() { validateAll(); }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -83,6 +87,14 @@ public class Index implements Initializable {
         initFixedValidators(fxFixed__field4);
         initFixedValidators(fxFixed__field5);
         initFixedValidators(fxFixed__field6);
+    }
+
+    private void resetAll() {
+
+    }
+
+    private void validateAll() {
+
     }
 
     private void initValidators(JFXTextField node) {

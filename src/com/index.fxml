@@ -42,12 +42,10 @@
                 <JFXTextField fx:id="fxFixed__field6" labelFloat="true" promptText="Text Filed 6" styleClass="group__field, fixed__field" />
             </VBox>
         </HBox>
-        <VBox alignment="CENTER">
-            <JFXButton buttonType="RAISED" styleClass="validateAll" text="Validate All" textFill="WHITE">
-            <VBox.margin>
-               <Insets top="30.0" />
-            </VBox.margin></JFXButton>
-        </VBox>
+        <HBox alignment="CENTER">
+            <JFXButton buttonType="RAISED" onAction="#fxOnResetAll" styleClass="controlButton" text="Reset All" textFill="WHITE" />
+            <JFXButton buttonType="RAISED" onAction="#fxOnValidateAll" styleClass="controlButton" text="Validate All" textFill="WHITE" />
+        </HBox>
     </VBox>
     <padding>
         <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
