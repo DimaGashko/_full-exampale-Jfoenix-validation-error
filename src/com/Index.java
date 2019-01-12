@@ -1,6 +1,7 @@
 package com;
 
 import com.jfoenix.controls.JFXTextField;
+import com.jfoenix.validation.RequiredFieldValidator;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.geometry.Pos;
@@ -16,12 +17,12 @@ public class Index implements Initializable {
     @FXML private JFXTextField fxNoError__field5;
     @FXML private JFXTextField fxNoError__field6;
 
-    @FXML private JFXTextField fxError__field1;
-    @FXML private JFXTextField fxError__field2;
-    @FXML private JFXTextField fxError__field3;
-    @FXML private JFXTextField fxError__field4;
-    @FXML private JFXTextField fxError__field5;
-    @FXML private JFXTextField fxError__field6;
+    @FXML private JFXTextField fxWithError__field1;
+    @FXML private JFXTextField fxWithError__field2;
+    @FXML private JFXTextField fxWithError__field3;
+    @FXML private JFXTextField fxWithError__field4;
+    @FXML private JFXTextField fxWithError__field5;
+    @FXML private JFXTextField fxWithError__field6;
 
     @FXML private JFXTextField fxFixed__field1;
     @FXML private JFXTextField fxFixed__field2;
@@ -32,7 +33,56 @@ public class Index implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        //initValidators();
+        setValidators();
+        initAllValidators();
+    }
+
+    private void setValidators() {
+        var required = new RequiredFieldValidator("Required field");
+
+        fxNoError__field1.getValidators().add(required);
+        fxNoError__field2.getValidators().add(required);
+        fxNoError__field3.getValidators().add(required);
+        fxNoError__field4.getValidators().add(required);
+        fxNoError__field5.getValidators().add(required);
+        fxNoError__field6.getValidators().add(required);
+
+        fxWithError__field1.getValidators().add(required);
+        fxWithError__field2.getValidators().add(required);
+        fxWithError__field3.getValidators().add(required);
+        fxWithError__field4.getValidators().add(required);
+        fxWithError__field5.getValidators().add(required);
+        fxWithError__field6.getValidators().add(required);
+
+        fxFixed__field1.getValidators().add(required);
+        fxFixed__field2.getValidators().add(required);
+        fxFixed__field3.getValidators().add(required);
+        fxFixed__field4.getValidators().add(required);
+        fxFixed__field5.getValidators().add(required);
+        fxFixed__field6.getValidators().add(required);
+    }
+
+    private void initAllValidators() {
+        initValidators(fxNoError__field1);
+        initValidators(fxNoError__field2);
+        initValidators(fxNoError__field3);
+        initValidators(fxNoError__field4);
+        initValidators(fxNoError__field5);
+        initValidators(fxNoError__field6);
+
+        initValidators(fxWithError__field1);
+        initValidators(fxWithError__field2);
+        initValidators(fxWithError__field3);
+        initValidators(fxWithError__field4);
+        initValidators(fxWithError__field5);
+        initValidators(fxWithError__field6);
+
+        initFixedValidators(fxFixed__field1);
+        initFixedValidators(fxFixed__field2);
+        initFixedValidators(fxFixed__field3);
+        initFixedValidators(fxFixed__field4);
+        initFixedValidators(fxFixed__field5);
+        initFixedValidators(fxFixed__field6);
     }
 
     private void initValidators(JFXTextField node) {

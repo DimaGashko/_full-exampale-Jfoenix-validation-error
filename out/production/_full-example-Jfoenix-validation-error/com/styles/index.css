@@ -1,5 +1,5 @@
 .group {
-    -fx-spacing: 20px;
+    -fx-spacing: 40px;
 }
 
 .group__title {
@@ -15,7 +15,7 @@
 }
 
 .noError__field {
-    
+
 }
 
 .withError__field,
