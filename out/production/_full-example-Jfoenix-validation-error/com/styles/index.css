@@ -22,3 +22,9 @@
 .fixed__field {
     -fx-alignment: center;
 }
+
+.controlButton {
+    -fx-font-size: 16px;
+    -fx-background-color: #424242;
+    -fx-fill: #fff;
+}
