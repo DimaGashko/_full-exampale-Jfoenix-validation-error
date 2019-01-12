@@ -13,3 +13,12 @@
 
     -fx-min-width: 100px;
 }
+
+.noError__field {
+    
+}
+
+.withError__field,
+.fixed__field {
+    -fx-alignment: center;
+}
