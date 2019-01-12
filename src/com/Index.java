@@ -145,9 +145,7 @@ public class Index implements Initializable {
             if (!newVal) node.validate();
         });
 
-        node.textProperty().addListener((o, oldVal, newVal) -> {
-            node.validate();
-        });
+        node.textProperty().addListener((o, oldVal, newVal) -> node.validate());
     }
 
     private void initFixedValidators(JFXTextField node) {
@@ -164,4 +162,4 @@ public class Index implements Initializable {
         });
     }
 
-};
+}
