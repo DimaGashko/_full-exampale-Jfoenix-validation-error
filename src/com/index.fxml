@@ -32,7 +32,7 @@
                 <JFXTextField fx:id="fxWithError__field6" labelFloat="true" promptText="Text Filed 6" styleClass="group__field, withError__field" />
             </VBox>
             <VBox styleClass="group">
-                <Label styleClass="group__title" text="Fixed" />
+                <Label styleClass="group__title" text="Almost Fixed" />
 
                 <JFXTextField fx:id="fxFixed__field1" labelFloat="true" promptText="Text Filed 1" styleClass="group__field, fixed__field" />
                 <JFXTextField fx:id="fxFixed__field2" labelFloat="true" promptText="Text Filed 2" styleClass="group__field, fixed__field" />
