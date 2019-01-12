@@ -7,8 +7,8 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<ScrollPane fitToHeight="true" fitToWidth="true" stylesheets="@index.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Index">
-    <HBox alignment="TOP_CENTER" spacing="40.0">
+<ScrollPane fitToHeight="true" fitToWidth="true" stylesheets="@styles/index.css, @styles/scroll.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Index">
+    <HBox alignment="CENTER" spacing="40.0">
         <VBox styleClass="group">
             <Label styleClass="group__title" text="No Error" />
 
@@ -17,6 +17,7 @@
             <JFXTextField fx:id="fxNoAlign__field3" labelFloat="true" styleClass="group__field" promptText="Text Filed 3" />
             <JFXTextField fx:id="fxNoAlign__field4" labelFloat="true" styleClass="group__field" promptText="Text Filed 4" />
             <JFXTextField fx:id="fxNoAlign__field5" labelFloat="true" styleClass="group__field" promptText="Text Filed 5" />
+            <JFXTextField fx:id="fxNoAlign__field6" labelFloat="true" styleClass="group__field" promptText="Text Filed 6" />
         </VBox>
         <VBox styleClass="group">
             <Label styleClass="group__title" text="With error" />
@@ -26,6 +27,7 @@
             <JFXTextField fx:id="fxError__field3" labelFloat="true" styleClass="group__field" promptText="Text Filed 3" />
             <JFXTextField fx:id="fxError__field4" labelFloat="true" styleClass="group__field" promptText="Text Filed 4" />
             <JFXTextField fx:id="fxError__field5" labelFloat="true" styleClass="group__field" promptText="Text Filed 5" />
+            <JFXTextField fx:id="fxError__field6" labelFloat="true" styleClass="group__field" promptText="Text Filed 6" />
         </VBox>
         <VBox styleClass="group">
             <Label styleClass="group__title" text="Fixed" />
@@ -35,6 +37,7 @@
             <JFXTextField fx:id="fxFixed__field3" labelFloat="true" styleClass="group__field" promptText="Text Filed 3" />
             <JFXTextField fx:id="fxFixed__field4" labelFloat="true" styleClass="group__field" promptText="Text Filed 4" />
             <JFXTextField fx:id="fxFixed__field5" labelFloat="true" styleClass="group__field" promptText="Text Filed 5" />
+            <JFXTextField fx:id="fxFixed__field6" labelFloat="true" styleClass="group__field" promptText="Text Filed 6" />
         </VBox>
       <padding>
          <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
